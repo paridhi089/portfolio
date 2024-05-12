@@ -2,6 +2,8 @@ import HeroIMG from '../assets/HeroIMG.png';
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGitlab } from "react-icons/fa6";
 import {TypeAnimation} from "react-type-animation";
+import { MdEmail } from "react-icons/md";
+import { MdAlternateEmail } from "react-icons/md";
 
 
 
@@ -30,8 +32,9 @@ const Hero=()=>{
                     />
                 </h1>
                 <div className='flex gap-3 my-7 justify-start'>
-                    <FaLinkedin size={40} className='text-white'/>
-                    <FaSquareGitlab size={40} className='text-white'/>
+                    <FaLinkedin size={40} className=' text-white hover:text-black hover:bg-white' />
+                    <FaSquareGitlab size={40} className=' text-white hover:text-black hover:bg-white'  />
+                   
                 </div>
             </div>
             <div className='my-auto bg-inherit'>
