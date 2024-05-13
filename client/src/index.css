@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 *{
-  background-color: black;
+  background-color:#1b1b1b;
+}
+@layer components{
+  .itemNeu{
+    border-radius: 16px;
+    background: #1b1b1b;
+    -webkit-box-shadow: 20px 20px 60px #0b0b0b, -20px -20px 60px #2b2b2b;
+    box-shadow: 20px 20px 60px #0b0b0b, -20px -20px 60px #2b2b2b;
+    }
 }

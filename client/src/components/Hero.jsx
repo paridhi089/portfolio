@@ -9,10 +9,13 @@ import { MdAlternateEmail } from "react-icons/md";
 
 const Hero=()=>{
     return(
-        <div className="bg-black max-w-[1300px] h-[80vh] mx-auto flex flex-col-reverse sm:flex-row justify-center ">
+        <div className="bg-[#1b1b1b] max-w-[1300px] h-[80vh] mx-auto flex flex-col-reverse sm:flex-row justify-center ">
             <div className='bg-inherit flex-col mx-auto my-auto'>
                 <p className='md:text-6xl sm:text-4xl font -bold text-white'>Hi! I am Paridhi</p>
-                <h1 className='text-white md:text=7xl sm:text-6xl text-4xl font-bold md:py-6'>
+                <p className='md:text-4xl sm:text-2xl font -bold md:py-6 text-white'>I am interested in</p>
+                
+                <h1 className='text-white md:text=6xl sm:text-5xl text-2xl font-bold md:py-6'>
+                    
 
                     <TypeAnimation
                     sequence={
@@ -21,6 +24,10 @@ const Hero=()=>{
                             1000,
                             "Web Developer",
                             1000,
+                            "Computer Networks",
+                            1000,
+                            "Server Admin",
+                            1000,
                             
                         ]
                     }
@@ -28,7 +35,6 @@ const Hero=()=>{
                     speed={50}
                     repeat={Infinity}
                     
-
                     />
                 </h1>
                 <div className='flex gap-3 my-7 justify-start'>
