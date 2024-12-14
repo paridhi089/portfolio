@@ -19,8 +19,8 @@ const Nav=()=>{
             </div>
             <div className=" space-x-4">
                 <div className='ssm:hidden lg:block spca-x-2'>
-                        <a href="#" className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl">Home</a>
-                      <a href="#" className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl">Projects</a>
+                        <a href="/" className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl">Home</a>
+                      <a href="/projects" className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl">Projects</a>
                          <a href="#" className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl">About</a>
                        <a href="#" className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl">Blog</a>
                 </div>
@@ -38,8 +38,8 @@ const Nav=()=>{
             {toggle?(
                 <div className='flex justify-between ml-10'>
                 <ul>
-                    <li className='hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer'>Home</li>
-                    <li className='hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer'>Projects</li>
+                    <li className='hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer'><a href="/">Home</a></li>
+                    <li className='hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer'><a href="/projects">Projects</a></li>
                     <li className='hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer'>About</li>
                     <li className='hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer'>Blog</li>
                 </ul>

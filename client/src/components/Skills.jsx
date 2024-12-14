@@ -42,8 +42,6 @@ const Skills=()=>{
             </div>
             <div className="items-center my-5 w-3/4 p-4 mx-auto flex-row">
                 <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-8 gap-4">
-                    <SkillItem text="C" src={CLang}/>
-                    <SkillItem text="C++" src={Cplusplus}/>
                     <SkillItem text="Kotlin" src={KT}/>
                     <SkillItem text="Java" src={Java}/>
                     <SkillItem text="Java Script" src={JS}/>
@@ -73,6 +71,7 @@ const Skills=()=>{
             </div>
             <div className="items-center my-5 w-3/4 p-4 mx-auto flex-row">
                 <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-8 gap-4">
+                    <SkillItem text="React Native" src={Rt}/>
                     <SkillItem text="React" src={Rt}/>
                     <SkillItem text="Node.js" src={NJS}/>
                     <SkillItem text="Bootstrap" src={BS}/>

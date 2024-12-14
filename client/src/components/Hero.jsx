@@ -20,14 +20,12 @@ const Hero=()=>{
                     <TypeAnimation
                     sequence={
                         [
-                            "Android Developer",
+                            "Android Development",
                             1000,
-                            "Web Developer",
+                            "Web Development",
                             1000,
                             "Computer Networks",
-                            1000,
-                            "Server Admin",
-                            1000,
+                            1000
                             
                         ]
                     }

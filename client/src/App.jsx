@@ -1,15 +1,25 @@
 
-import Main from './components/Main'
 
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Projects from "./pages/Projects";
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
  
 
   return (
-   <>
-   <Main/>
 
-   </>
+    <Routes>
+      <Route path="/login" element={<Login/>}/>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/projects" element={<Projects/>}/>
+    </Routes>
+   
+   
+   
+
+   
   )
 }
 
