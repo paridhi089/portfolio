@@ -48,7 +48,7 @@ const handleLogout = async ()=>{
 
 
     return(
-        <div>
+        <div className="bg-[#1b1b1b]">
              <Nav/>
 
              <div className="itemNeu mx-16 rounded-md">

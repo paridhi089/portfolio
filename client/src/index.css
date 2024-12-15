@@ -5,6 +5,9 @@
 *{
   background-color:#1b1b1b;
 }
+.tiptap p {
+  background-color: white;
+}
 .ProseMirror {
   background-color: white !important;
   color: black !important;
