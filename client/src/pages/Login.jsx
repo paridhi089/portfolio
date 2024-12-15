@@ -1,29 +1,43 @@
 import Nav from "../components/Nav"
-import {useDispatch} from 'react-redux'
-import { useState } from "react";
+import {useEffect, useState } from "react";
 import supabase from '../supabase/supabaseClient'
-import {setUser} from '../redux/authActions'
+import { useNavigate} from 'react-router-dom'
 
 
 const Login=()=>{
+    const navigate=useNavigate();
 
-    const dispatch=useDispatch();
+
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
     const [error, setError] = useState("");
+
+    useEffect(()=>{
+        const checkUser =async () =>{
+            const {data} =await supabase.auth.getSession();
+            if(data?.session?.user){
+                navigate('/')
+
+            }
+
+        };
+        checkUser();
+    },[navigate]
+    )
 
     const handleLogin=async(e)=>{
         e.preventDefault()
         setError("")
         try{
-            const {user,error}=await supabase.auth.signInWithPassword({
+            const {data,error}=await supabase.auth.signInWithPassword({
                 email:email,
                 password:password
             });
-            if(user) 
+            if(data?.user) 
             {
-                dispatch(setUser(user))
-                alert(user.email)
+                
+                navigate('/')
+                //alert(data.user.id)
             }
             if(error) throw error
         }

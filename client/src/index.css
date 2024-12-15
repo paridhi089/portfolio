@@ -5,6 +5,10 @@
 *{
   background-color:#1b1b1b;
 }
+.ProseMirror {
+  background-color: white !important;
+  color: black !important;
+}
 @layer components{
   .itemNeu{
     border-radius: 16px;
@@ -12,4 +16,6 @@
     -webkit-box-shadow: 20px 20px 60px #0b0b0b, -20px -20px 60px #2b2b2b;
     box-shadow: 20px 20px 60px #0b0b0b, -20px -20px 60px #2b2b2b;
     }
+
+    
 }
