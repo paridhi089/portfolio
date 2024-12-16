@@ -30,6 +30,9 @@
   font-size: 12px;
   border-radius: 3px;
 }
+p {
+  size: 70dp;
+}
 
 @layer components{
   .itemNeu{
