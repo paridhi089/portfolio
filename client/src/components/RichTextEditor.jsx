@@ -13,7 +13,7 @@ import { LuImagePlus } from "react-icons/lu";
 
 const RichTextEditor = ({ content, onChange }) => {
 
-  const [showModal, setShowModal] = useState(false);
+  
   const [formData, setFormData] = useState({
     src: '',
     href: '',
@@ -29,10 +29,22 @@ const RichTextEditor = ({ content, onChange }) => {
     });
   };
 
-  const insertImageWithLink = () => {
-    editor.chain().focus().setImageWithLink(formData).run();
-    setShowModal(false);
-    setFormData({ src: '', href: '', alt: '' }); 
+  const insertImageFromSelection = () => {
+    const selectedText = editor.state.doc.textBetween(
+      editor.state.selection.from,
+      editor.state.selection.to,
+      ' '
+    );
+
+    if (selectedText) {
+      editor
+        .chain()
+        .focus()
+        .setImageWithLink({ src: selectedText, href: selectedText, alt: 'Image' })
+        .run();
+    } else {
+      alert('Please select a valid image URL in the editor.');
+    }
   };
 
 
@@ -141,40 +153,13 @@ const RichTextEditor = ({ content, onChange }) => {
         </button>
 
         <button
-        onClick={() => setShowModal(true)}
+        onClick={insertImageFromSelection}
       >
         <LuImagePlus className='bg-white'/>
         
       </button>
 
-      {showModal && (
-        <div className="modal">
-          <h3>Insert Image with Link</h3>
-          <input
-            type="text"
-            name="src"
-            placeholder="Image URL"
-            value={formData.src}
-            onChange={handleInputChange}
-          />
-          <input
-            type="text"
-            name="href"
-            placeholder="Link URL"
-            value={formData.href}
-            onChange={handleInputChange}
-          />
-          <input
-            type="text"
-            name="alt"
-            placeholder="Alt Text"
-            value={formData.alt}
-            onChange={handleInputChange}
-          />
-          <button onClick={insertImageWithLink}>Insert</button>
-          <button onClick={() => setShowModal(false)}>Cancel</button>
-        </div>
-      )}
+   
        
         
       </div>

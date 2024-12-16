@@ -38,7 +38,11 @@ const ImageWithLink = Node.create({
 
   renderHTML({ HTMLAttributes }) {
     const { href, ...rest } = HTMLAttributes;
-    return ['a', { href }, ['img', mergeAttributes(rest)]];
+    return [
+      "span",
+      { "data-href": href, class: "image-wrapper" },
+      ["img", mergeAttributes(rest)],
+    ];
   },
 
   addCommands() {
