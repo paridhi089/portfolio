@@ -14,7 +14,7 @@ const Hero=()=>{
                 <p className='md:text-6xl text-center sm:text-left sm:text-4xl font -bold text-white'>Hi! I am Paridhi</p>
                 <p className='md:text-4xl text-center sm:text-left sm:text-2xl font -bold md:py-6 text-white'>I am interested in</p>
                 
-                <h1 className='text-white text-center sm:text-left md:text=6xl sm:text-5xl text-2xl font-bold md:py-6'>
+                <h1 className='text-[#5c4dd6] text-center sm:text-left md:text=6xl sm:text-5xl text-2xl font-bold md:py-6'>
                     
 
                     <TypeAnimation
