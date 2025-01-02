@@ -3,51 +3,61 @@ import { Node, mergeAttributes } from '@tiptap/core';
 const ImageWithLink = Node.create({
   name: 'imageWithLink',
 
-  group: 'inline',
-
-  inline: true,
-
+  group: 'block', 
+  inline: false,
   draggable: true,
 
   addAttributes() {
     return {
-      src: {
-        default: null,
-      },
-      alt: {
-        default: null,
-      },
-      href: {
-        default: null,
-      },
+      src: { default: null },
+      alt: { default: null },
+      href: { default: null },
+      caption: { default: null }, // Add caption attribute
     };
   },
 
   parseHTML() {
     return [
       {
-        tag: 'a[href] > img[src]',
-        getAttrs: (dom) => ({
-          href: dom.parentNode.getAttribute('href'),
-          src: dom.getAttribute('src'),
-          alt: dom.getAttribute('alt'),
-        }),
+        tag: 'div[data-image-wrapper]',
+        getAttrs: (dom) => {
+          const img = dom.querySelector('img');
+          const caption = dom.querySelector('figcaption');
+          return {
+            href: dom.getAttribute('data-href'),
+            src: img.getAttribute('src'),
+            alt: img.getAttribute('alt'),
+            caption: caption ? caption.innerText : null,
+          };
+        },
       },
     ];
   },
 
   renderHTML({ HTMLAttributes }) {
-    const { href, ...rest } = HTMLAttributes;
+    const { href, caption, ...rest } = HTMLAttributes;
+
     return [
-      "span",
-      { "data-href": href, class: "image-wrapper" },
-      ["img", mergeAttributes(rest)],
+      'div',
+      { 'data-image-wrapper': true, class: 'flex flex-col items-center my-4' },
+      [
+        'a',
+        { href, target: '_blank', rel: 'noopener noreferrer' },
+        ['img', mergeAttributes(rest, { class: 'rounded-md shadow-md max-w-full h-auto' })],
+      ],
+      caption
+        ? [
+            'figcaption',
+            { class: 'text-sm text-gray-500 mt-2 text-center' },
+            caption,
+          ]
+        : null,
     ];
   },
 
   addCommands() {
     return {
-      setImageWithLink:
+      setImageWithCaption:
         (options) =>
         ({ commands }) => {
           return commands.insertContent({

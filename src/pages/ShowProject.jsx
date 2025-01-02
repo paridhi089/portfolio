@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import supabase from "../supabase/supabaseClient";
 import Nav from "../components/Nav";
-import LinearProgress from '@mui/joy/LinearProgress';
+import LinearProgress from "@mui/joy/LinearProgress";
+import Slide from "../components/projectComponets/Slide";
 
 const ShowProject = () => {
   const { id } = useParams();
@@ -36,33 +37,39 @@ const ShowProject = () => {
     return (
       <div className="flex justify-center items-center h-screen">
         <div className="flex-col">
-        <LinearProgress className=" w-[200px] sm:w-[700px]" color="neutral" size="lg"/>
-        <p className=" text-center text-white">Loading...</p>
-
+          <LinearProgress
+            className=" w-[200px] sm:w-[700px]"
+            color="neutral"
+            size="lg"
+          />
+          <p className=" text-center text-white">Loading...</p>
         </div>
-       
       </div>
     );
   if (error)
     return (
-      <p>
-        {" "}
-        {id} Error: {error}
-      </p>
+      <div className="flex justify-center items-center h-screen">
+        <div className="flex-col">
+          <p className=" text-[#ff0000] text-center">Error: {error}</p>
+        </div>
+      </div>
     );
-  if (!project) return <p>No project found.</p>;
+  if (!project)
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <div className="flex-col">
+          <p className=" text-[#ff0000] text-center">No Project Found</p>
+        </div>
+      </div>
+    );
 
   return (
     <>
       <Nav />
       <div className="flex items-center justify-center min-h-screen bg-[#1b1b1b] text-white p-8">
         <div className="max-w-2xl text-left">
-          <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
-          <img
-            src={project.thumbURL}
-            alt={project.title}
-            className="max-w-full h-auto mb-4 rounded-lg"
-          />
+          <h1 className="text-3xl font-bold mb-16 text-center">{project.title}</h1>
+          <Slide slides={project.carousel}/>
           <div
             className="prose prose-invert"
             dangerouslySetInnerHTML={{ __html: project.content }}

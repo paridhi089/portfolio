@@ -30,6 +30,17 @@
   font-size: 12px;
   border-radius: 3px;
 }
+
+.carousel .control-dots .dot {
+  background: transparent !important; 
+  border: 2px solid #fff; 
+  transition: all 0.3s ease; 
+}
+
+.carousel .control-dots .dot.selected {
+  background: #fff !important; 
+}
+
 p {
   size: 70dp;
 }
