@@ -29,6 +29,7 @@ import WD from '../assets/icons/webdriver.svg'
 import Vim from '../assets/icons/vim.svg'
 import AWS from '../assets/icons/aws.svg'
 import Git from '../assets/icons/git.svg'
+import FastApi from '../assets/icons/fastAPI.svg'
 
 
 const Skills=()=>{
@@ -74,6 +75,7 @@ const Skills=()=>{
                     <SkillItem text="React Native" src={Rt}/>
                     <SkillItem text="React" src={Rt}/>
                     <SkillItem text="Node.js" src={NJS}/>
+                    <SkillItem text="FastAPI" src={FastApi}/>
                     <SkillItem text="Bootstrap" src={BS}/>
                     <SkillItem text="Tailwind CSS" src={TW}/>
                 </div>
