@@ -10,6 +10,7 @@ import "../index.css";
 const AddProjects = () => {
   const navigate = useNavigate();
   const [title, setTitle] = useState('');
+  const [summary,setSummary]=useState('');
   const [thumbURL, setThumbURL] = useState('');
   const [editorContent, setEditorContent] = useState('');
   const [carousel, setCarousel] = useState([]); 
@@ -44,6 +45,7 @@ const AddProjects = () => {
       .insert([
         {
           title:title,
+          summary:summary,
           carousel: carousel,
           content:editorContent
         }
@@ -58,6 +60,7 @@ const AddProjects = () => {
       setThumbURL('')
       setTitle('')
       setEditorContent('')
+      setSummary('')
       setCarousel([])
     }catch(error)
     {
@@ -98,6 +101,14 @@ const AddProjects = () => {
               className="py-4 px-4 mb-8 flex text-black w-full rounded-lg bg-white"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
+              required
+            />
+            <textarea
+              type="text"
+              placeholder="Summary"
+              className="py-4 px-4 mb-8 flex text-black w-full rounded-lg bg-white"
+              value={summary}
+              onChange={(e) => setSummary(e.target.value)}
               required
             />
            

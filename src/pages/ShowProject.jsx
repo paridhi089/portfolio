@@ -68,8 +68,15 @@ const ShowProject = () => {
       <Nav />
       <div className="flex items-center justify-center min-h-screen bg-[#1b1b1b] text-white p-8">
         <div className="max-w-2xl text-left">
-          <h1 className="text-3xl font-bold mb-16 text-center">{project.title}</h1>
-          <Slide slides={project.carousel}/>
+          <h1 className="text-3xl font-bold mb-16 text-center">
+            {project.title}
+          </h1>
+          <Slide slides={project.carousel} />
+          <div className="itemNeu px-12 py-12 mb-12">
+            <h1 className="text-2xl font-bold text-left">Summary</h1>
+            <p className="text-white">{project.summary}</p>
+          </div>
+
           <div
             className="prose prose-invert"
             dangerouslySetInnerHTML={{ __html: project.content }}

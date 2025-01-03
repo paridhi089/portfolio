@@ -41,7 +41,7 @@ const Skills=()=>{
                 <h1 className=" text-start text-2xl">Languages</h1>
             </div>
             <div className="items-center my-5 w-3/4 p-4 mx-auto flex-row">
-                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8  gap-4">
                     <SkillItem text="Kotlin" src={KT}/>
                     <SkillItem text="Java" src={Java}/>
                     <SkillItem text="Java Script" src={JS}/>
@@ -57,7 +57,7 @@ const Skills=()=>{
                 <h1 className=" text-start text-2xl">Databases</h1>
             </div>
             <div className="items-center my-5 w-3/4 p-4 mx-auto flex-row">
-                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
                     <SkillItem text="My SQL" src={SQL}/>
                     <SkillItem text="Firebase" src={Firebase}/>
                     <SkillItem text="Supabase" src={Supabase}/>
@@ -70,7 +70,7 @@ const Skills=()=>{
                 <h1 className=" text-start text-2xl">Framework</h1>
             </div>
             <div className="items-center my-5 w-3/4 p-4 mx-auto flex-row">
-                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
                     <SkillItem text="React Native" src={Rt}/>
                     <SkillItem text="React" src={Rt}/>
                     <SkillItem text="Node.js" src={NJS}/>
@@ -82,7 +82,7 @@ const Skills=()=>{
                 <h1 className=" text-start text-2xl">Software Testing</h1>
             </div>
             <div className="items-center my-5 w-3/4 p-4 mx-auto flex-row">
-                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
                     <SkillItem text="Selenium IDE" src={IDE}/>
                     <SkillItem text="Selenium WebDriver" src={WD}/>
                 </div>
@@ -91,7 +91,7 @@ const Skills=()=>{
                 <h1 className=" text-start text-2xl">Operating Systems</h1>
             </div>
             <div className="items-center my-5 w-3/4 p-4 mx-auto flex-row">
-                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
                     <SkillItem text="Debian" src={Debian}/>
                     <SkillItem text="Arch Linux" src={Arch}/>
                     <SkillItem text="Fedora" src={Fedora}/>
@@ -103,7 +103,7 @@ const Skills=()=>{
                 <h1 className=" text-start text-2xl">Others</h1>
             </div>
             <div className="items-center my-5 w-3/4 p-4 mx-auto flex-row">
-                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
                     <SkillItem text="Vim" src={Vim}/>
                     <SkillItem text="Git" src={Git}/>
                     <SkillItem text="AWS" src={AWS}/>

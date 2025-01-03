@@ -10,6 +10,9 @@ export default {
       sm:'640px',
       md:'768px',
       lg:'1024px',
+      xl: '1259px',
+      ipad12Landscape: { raw: '(min-width: 1366px) and (orientation: landscape)' }
+
       
     },
     extend: {},

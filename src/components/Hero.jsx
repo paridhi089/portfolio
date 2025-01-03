@@ -10,16 +10,16 @@ const Hero = () => {
   const LINKEDIN = "https://www.linkedin.com/in/paridhi-prisha-saikia";
   const GIT = "https://gitlab.com/paridhips/";
   return (
-    <div className="bg-[#1b1b1b] max-w-[1300px] h-[80vh] mx-auto flex flex-col-reverse sm:flex-row justify-center ">
+    <div className="bg-[#1b1b1b] max-w-[1300px] h-[80vh] mx-auto flex flex-col-reverse lg:flex-row justify-center ">
       <div className="bg-inherit min-w-[270px] sm:min-w-[550px] flex-col mx-auto my-auto w-30">
-        <p className="md:text-6xl text-center sm:text-left sm:text-4xl font -bold text-white">
+        <p className="md:text-6xl text-center lg:text-left sm:text-4xl font -bold text-white">
           Hi! I am Paridhi
         </p>
-        <p className="md:text-4xl text-center sm:text-left sm:text-2xl font -bold md:py-6 text-white">
+        <p className="md:text-4xl text-center lg:text-left sm:text-2xl font -bold md:py-6 text-white">
           I am interested in
         </p>
 
-        <h1 className="text-[#5c4dd6] text-center sm:text-left md:text=6xl sm:text-5xl text-2xl font-bold md:py-6">
+        <h1 className="text-[#5c4dd6] text-center lg:text-left md:text=6xl sm:text-5xl text-2xl font-bold md:py-6">
           <TypeAnimation
             sequence={[
               "Android Development",
@@ -34,7 +34,7 @@ const Hero = () => {
             repeat={Infinity}
           />
         </h1>
-        <div className="flex gap-3 my-7 justify-center sm:justify-start">
+        <div className="flex gap-3 my-7 justify-center lg:justify-start">
           <Link to={LINKEDIN} target="_blank" rel="noreferrer">
             <FaLinkedin
               size={40}
