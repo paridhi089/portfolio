@@ -4,7 +4,7 @@ const Experience = () => {
         <h1 className="text-3xl font-bold text-white text-center">Experience</h1>
       <div className="flex-row">
         <h1 className="text-[#5c4dd6] font-bold ">April 2024 - June 2024</h1>
-        <h1 className="text-white text-2xl font-bold">
+        <h1 className="text-white text-l sm:text-2xl font-bold">
           Adithya Systems and Services
         </h1>
         <p className="text-white italic">Operations Manager Intern</p>
