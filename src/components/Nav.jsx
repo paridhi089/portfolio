@@ -2,6 +2,7 @@ import { CgNametag } from "react-icons/cg";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
+import downloadResume from "../utils/downloadResume";
 
 const Nav = () => {
   const [toggle, setToggle] = useState(false);
@@ -38,13 +39,13 @@ const Nav = () => {
               Projects
             </a>
             <a
-              href="#"
+              onClick={downloadResume}
               className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl"
             >
               Resume
             </a>
             <a
-              href="#"
+              href="/about"
               className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl"
             >
               About
@@ -78,11 +79,11 @@ const Nav = () => {
               <li className="hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer">
                 <a href="/projects">Projects</a>
               </li>
-              <li className="hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer">
+              <li onClick={downloadResume} className="hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer">
                 Resume
               </li>
               <li className="hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer">
-                About
+              <a href="/about">About</a>
               </li>
               
               {/*<li className='hover:bg-slate-800 text-white text-xl mb-2 cursor-pointer'>Blog</li>*/}

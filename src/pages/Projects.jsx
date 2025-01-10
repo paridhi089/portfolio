@@ -1,4 +1,3 @@
-import { carasoul } from "./projects/project01/data";
 import Nav from "../components/Nav";
 import ProjectOverview from "../components/ProjectOverview";
 import { useState } from "react";

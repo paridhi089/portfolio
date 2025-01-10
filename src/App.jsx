@@ -4,7 +4,8 @@ import Projects from "./pages/Projects";
 import { Route, Routes } from "react-router-dom";
 import AddProjects from "./pages/AddProjects";
 import ShowProject from "./pages/ShowProject";
-import Project01 from "./pages/projects/project01/Project01";
+import About from "./pages/About";
+
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Route path="/projects" element={<Projects />} />
       <Route path="/addprojects" element={<AddProjects />} />
       <Route path="/projects/:id" element={<ShowProject />} />
-      <Route path="/project/01" element={<Project01/>}/>
+      <Route path="/about" element={<About/>}/>
     </Routes>
   );
 }
