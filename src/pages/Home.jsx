@@ -2,6 +2,7 @@ import Nav from "../components/Nav"
 import Hero from "../components/Hero"
 import Skills from "../components/Skills"
 import ExperienceAndEdu from "../components/ExperienceAndEdu"
+import Footer from "../components/Footer"
 
 const Home=()=>{
     return(
@@ -10,6 +11,7 @@ const Home=()=>{
             <Hero/>
             <ExperienceAndEdu/>
             <Skills/>
+            <Footer/>
 
         </div>
     )

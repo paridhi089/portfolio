@@ -4,6 +4,7 @@ import supabase from "../supabase/supabaseClient";
 import Nav from "../components/Nav";
 import LinearProgress from "@mui/joy/LinearProgress";
 import Slide from "../components/projectComponets/Slide";
+import Footer from "../components/Footer";
 
 const ShowProject = () => {
   const { id } = useParams();
@@ -68,12 +69,12 @@ const ShowProject = () => {
       <Nav />
       <div className="flex items-center justify-center min-h-screen bg-[#1b1b1b] text-white p-8">
         <div className="max-w-2xl text-left">
-          <h1 className="text-3xl font-bold mb-16 text-center">
+          <h1 className="text-5xl font-bold mb-16 text-center">
             {project.title}
           </h1>
           <Slide slides={project.carousel} />
           <div className="itemNeu px-12 py-12 mt-6 mb-6">
-            <h1 className="text-2xl font-bold text-left">Summary</h1>
+            <h1 className="text-3xl font-bold text-left">Summary</h1>
             <p className="text-white">{project.summary}</p>
           </div>
 
@@ -82,6 +83,7 @@ const ShowProject = () => {
             dangerouslySetInnerHTML={{ __html: project.content }}
           ></div>
         </div>
+        <Footer/>
       </div>
     </>
   );

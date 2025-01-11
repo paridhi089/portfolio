@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
 const About = () => {
@@ -46,6 +47,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

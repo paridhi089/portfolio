@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  background-color:#1b1b1b;
+* {
+  background-color: #1b1b1b;
 }
 .tiptap p {
   background-color: white;
@@ -32,28 +32,34 @@
 }
 
 .carousel .control-dots .dot {
-  background: transparent !important; 
-  border: 2px solid #fff; 
-  transition: all 0.3s ease; 
+  background: transparent !important;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
 }
 
 .carousel .control-dots .dot.selected {
-  background: #fff !important; 
+  background: #fff !important;
 }
 
 p {
   size: 70dp;
 }
+.tiptap h1 {
+  font-size: 3rem;
+  line-height: 1;
+}
 
-@layer components{
-  .itemNeu{
+@layer components {
+  .itemNeu {
     border-radius: 16px;
     background: #1b1b1b;
     -webkit-box-shadow: 20px 20px 60px #0b0b0b, -20px -20px 60px #2b2b2b;
     box-shadow: 5px 5px 10px #0b0b0b, -2px -2px 4px #2b2b2b;
-    }
+  }
 
-    
-
-    
+  .whiteNeu {
+    border-radius: 53px;
+    background: #e0e0e0;
+    box-shadow: inset 50px 50px 100px #949494, inset -50px -50px 100px #ffffff;
+  }
 }

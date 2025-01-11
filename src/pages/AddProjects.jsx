@@ -6,6 +6,7 @@ import { useState } from "react";
 import supabase from "../supabase/supabaseClient";
 import RichTextEditor from "../components/RichTextEditor";
 import "../index.css";
+import Footer from "../components/Footer";
 
 const AddProjects = () => {
   const navigate = useNavigate();
@@ -56,12 +57,13 @@ const AddProjects = () => {
       {
         throw error
       }
-      alert('Project Added Successfully')
+      console.log('Project Added Successfully')
       setThumbURL('')
       setTitle('')
       setEditorContent('')
       setSummary('')
       setCarousel([])
+      navigate('/projects')
     }catch(error)
     {
       console.error(error.message)
@@ -167,6 +169,7 @@ const AddProjects = () => {
           Log Out
         </button>
       </div>
+      <Footer/>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import supabase from "../supabase/supabaseClient";
 import { LinearProgress } from "@mui/joy";
+import Footer from "../components/Footer";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -52,6 +53,8 @@ const Projects = () => {
           ))}
         </div>
       )}
+
+      <Footer/>
     </div>
   );
 };
