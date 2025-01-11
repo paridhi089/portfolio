@@ -5,6 +5,7 @@ import Nav from "../components/Nav";
 import LinearProgress from "@mui/joy/LinearProgress";
 import Slide from "../components/projectComponets/Slide";
 import Footer from "../components/Footer";
+import BackBtn from "../components/BackBtn";
 
 const ShowProject = () => {
   const { id } = useParams();
@@ -67,6 +68,7 @@ const ShowProject = () => {
   return (
     <>
       <Nav />
+      <BackBtn path={"/projects"}/>
       <div className="flex items-center justify-center min-h-screen bg-[#1b1b1b] text-white p-8">
         <div className="max-w-2xl text-left">
           <h1 className="text-5xl font-bold mb-16 text-center">

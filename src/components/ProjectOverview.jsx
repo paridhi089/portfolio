@@ -16,7 +16,7 @@ const ProjectOverview = (item) => {
         <h1 className="text-2xl text-center mt-4 px-4 text-white">
           {item.title}
         </h1>
-        <p className="text-white line-clamp-3 text-sm text-left px-4 ">{item.summary}</p>
+        <p className="text-white line-clamp-3 text-sm text-left mt-4 px-4 ">{item.summary}</p>
       </div>
     </div>
   );

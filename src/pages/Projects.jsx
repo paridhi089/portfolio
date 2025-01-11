@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import supabase from "../supabase/supabaseClient";
 import { LinearProgress } from "@mui/joy";
 import Footer from "../components/Footer";
+import BackBtn from "../components/BackBtn";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -14,7 +15,7 @@ const Projects = () => {
     const fetchProjects = async () => {
       setLoading(true);
       try {
-        const { data, error } = await supabase.from("projects").select("*");
+        const { data, error } = await supabase.from("projects").select("*").order('id', { ascending: false });
         if (error) throw error;
         setProjects(data);
       } catch (error) {
@@ -29,6 +30,7 @@ const Projects = () => {
   return (
     <div className="bg-[#1b1b1b]">
       <Nav />
+      <BackBtn path={"/"}/>
       {loading ? (
         <div className="flex justify-center items-center h-screen">
           <div className="flex-col">
