@@ -75,7 +75,7 @@ const ShowProject = () => {
           <Slide slides={project.carousel} />
           <div className="itemNeu px-12 py-12 mt-6 mb-6">
             <h1 className="text-3xl font-bold text-left">Summary</h1>
-            <p className="text-white">{project.summary}</p>
+            <p className="mt-4 text-white">{project.summary}</p>
           </div>
 
           <div
@@ -83,8 +83,8 @@ const ShowProject = () => {
             dangerouslySetInnerHTML={{ __html: project.content }}
           ></div>
         </div>
-        <Footer/>
       </div>
+      <Footer/>
     </>
   );
 };
