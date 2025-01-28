@@ -2,7 +2,7 @@ const Experience = () => {
   return (
     <div className="w-4/5 lg:w-1/2 itemNeu gap-4 flex-col p-8 mx-auto ">
         <h1 className="text-3xl font-bold text-white text-center">Experience</h1>
-      <div className="flex-row">
+      <div className="flex-row mt-5">
         <h1 className="text-[#5c4dd6] font-bold ">April 2024 - June 2024</h1>
         <h1 className="text-white text-l sm:text-2xl font-bold">
           Adithya Systems and Services
