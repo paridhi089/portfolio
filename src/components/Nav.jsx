@@ -20,7 +20,7 @@ const Nav = () => {
             href="#"
             className="text-white font-mono text-2xl tracking-wider flex items-center"
           >
-            <FaCat className="me-5" />
+            <FaCat className="me-1" />
             Paridhi
           </a>
         </div>
