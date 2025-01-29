@@ -1,4 +1,4 @@
-import { CgNametag } from "react-icons/cg";
+import { FaCat } from "react-icons/fa6";
 import { CiMenuFries } from "react-icons/ci";
 import { AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
@@ -20,7 +20,7 @@ const Nav = () => {
             href="#"
             className="text-white font-mono text-2xl tracking-wider flex items-center"
           >
-            <CgNametag />
+            <FaCat className="me-5" />
             Paridhi
           </a>
         </div>
