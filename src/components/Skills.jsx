@@ -30,6 +30,7 @@ import Vim from '../assets/icons/vim.svg'
 import AWS from '../assets/icons/aws.svg'
 import Git from '../assets/icons/git.svg'
 import FastApi from '../assets/icons/fastAPI.svg'
+import Compose from '../assets/icons/compose.svg'
 
 
 const Skills=()=>{
@@ -72,6 +73,7 @@ const Skills=()=>{
             </div>
             <div className="items-center my-5 w-3/4 p-4 mx-auto flex-row">
                 <div className=" grid grid-cols-2 sm:gap-4  md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
+                    <SkillItem text="Jetpack Compose" src={Compose}/>
                     <SkillItem text="React Native" src={Rt}/>
                     <SkillItem text="React" src={Rt}/>
                     <SkillItem text="Node.js" src={NJS}/>
