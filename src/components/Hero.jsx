@@ -35,7 +35,7 @@ const Hero = () => {
             repeat={Infinity}
           />
         </h1>
-        <div className="flex gap-3 my-7 justify-center lg:justify-start">
+        <div className="flex gap-3 my-3 sm:my-7 justify-center lg:justify-start">
           <Link to={LINKEDIN} target="_blank" rel="noreferrer">
             <FaLinkedin
               size={40}
@@ -52,7 +52,7 @@ const Hero = () => {
       </div>
       <div className="my-auto bg-inherit">
         <img
-          className="bg-inherit w-[500px] sm:w-[500px] mx-auto h-auto"
+          className="bg-inherit mx-auto w-[300px] sm:w-[500px] sm:mx-auto h-auto"
           src={Creative}
           alt="hero image"
         />
