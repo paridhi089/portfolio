@@ -28,7 +28,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="bg-[#1b1b1b]">
+    <div className="bg-[#101418]">
       <Nav />
       <BackBtn path={"/"}/>
       {loading ? (

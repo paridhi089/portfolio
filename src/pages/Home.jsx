@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 
 const Home=()=>{
     return(
-        <div className="bg-[#1b1b1b]">
+        <div className="bg-[#101418]">
             <Nav/>
             <Hero/>
             <ExperienceAndEdu/>

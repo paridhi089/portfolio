@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  background-color: #1b1b1b;
+  background-color: #101418;
 }
 .tiptap p {
   background-color: white;
@@ -52,9 +52,9 @@ p {
 @layer components {
   .itemNeu {
     border-radius: 16px;
-    background: #1b1b1b;
-    -webkit-box-shadow: 20px 20px 60px #0b0b0b, -20px -20px 60px #2b2b2b;
-    box-shadow: 5px 5px 10px #0b0b0b, -2px -2px 4px #2b2b2b;
+    background: #101418;
+    -webkit-box-shadow: 20px 20px 60px #060709, -20px -20px 60px #1a1f27;
+    box-shadow: 5px 5px 10px #060709, -2px -2px 4px #1a1f27;
   }
 
   .whiteNeu {

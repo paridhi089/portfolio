@@ -17,7 +17,7 @@ const Nav = () => {
       <div className="flex item-center justify-between p-6 lg:flex-row ">
         <div>
           <a
-            href="#"
+            href="/"
             className="text-white font-mono text-2xl tracking-wider flex items-center"
           >
             <FaCat className="me-1" />
