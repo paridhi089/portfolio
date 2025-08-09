@@ -1,4 +1,5 @@
 import HeroIMG from "../assets/HeroIMG.png";
+import Creative from "../assets/creative.svg";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareGitlab } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
@@ -52,7 +53,7 @@ const Hero = () => {
       <div className="my-auto bg-inherit">
         <img
           className="bg-inherit w-[500px] sm:w-[500px] mx-auto h-auto"
-          src={HeroIMG}
+          src={Creative}
           alt="hero image"
         />
       </div>
