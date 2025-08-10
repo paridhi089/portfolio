@@ -28,25 +28,25 @@ const Nav = () => {
           <div className="ssm:hidden lg:block spca-x-2">
             <a
               href="/"
-              className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl"
+              className="text-white hover:bg-[#5c4dd6] rounded-lg px-5 py-2 text-xl"
             >
               Home
             </a>
             <a
               href="/projects"
-              className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl"
+              className="text-white hover:bg-[#5c4dd6] rounded-lg px-5 py-2 text-xl"
             >
               Projects
             </a>
             <a
               onClick={downloadResume}
-              className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl"
+              className="text-white hover:bg-[#5c4dd6]  rounded-lg px-5 py-2 text-xl"
             >
               Resume
             </a>
             <a
               href="/about"
-              className="text-white hover:bg-slate-800 rounded-lg px-5 py-2 text-xl"
+              className="text-white hover:bg-[#5c4dd6]  rounded-lg px-5 py-2 text-xl"
             >
               About
             </a>
