@@ -1,15 +1,26 @@
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import AboutImg from "../assets/cat.svg";
 
 const About = () => {
   return (
     <div>
       <Nav />
       <div className="flex flex-row lg:flex-col-reverse mx-auto mb-12 lg:max-w-[800px]">
-        <div className="itemNeu mx-5 mt-10 px-8 py-8">
+        <div className="mx-5 mt-10 px-8 py-8">
           <h1 className="text-4xl font-bold text-center text-white">
             About Me
           </h1>
+          <div>
+            <img
+
+              className="my-12 bg-inherit mx-auto w-[300px] sm:w-[500px] sm:mx-auto h-auto"
+              src={AboutImg}
+              alt="hero image"
+
+            />
+          </div>
+
           <p className="mt-8 text-[16px] leading-8 text-white">
             I am Paridhi, a passionate developer with a deep interest in Android
             application development and computer networking. My love for
@@ -47,7 +58,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
