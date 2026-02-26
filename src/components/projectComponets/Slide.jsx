@@ -2,8 +2,10 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import { Carousel } from "react-responsive-carousel";
 import "../../index.css";
+import replaceUrl from "../../utils/replaceUrl";
 
 const Slide = ({ slides }) => {
+  if (!slides || slides.length === 0) return null;
   return (
     <div className="max-w-[1000px] max-h-[750px] mx-auto overflow-hidden">
       <Carousel
@@ -13,10 +15,11 @@ const Slide = ({ slides }) => {
         className="carousel"
       >
         {slides.map((slide, index) => (
+
           <div key={index}>
             <div>
               <img
-                src={slide.src}
+                src={replaceUrl(slide.src)}
                 alt={`Slide ${index + 1}`}
                 className="h-[700px] w-auto object-contain mx-auto mb-6"
               />

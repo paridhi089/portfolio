@@ -3,8 +3,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carous
 import { Carousel } from "react-responsive-carousel";
 import "../../index.css";
 
+
 const MiniSlide = ({ slides }) => {
+  if (!slides || slides.length === 0) return null;
   return (
+
     <div className="sm:max-w-[350px] mx-auto overflow-hidden">
       <Carousel
         showThumbs={false}
@@ -16,7 +19,7 @@ const MiniSlide = ({ slides }) => {
           <div key={index}>
             <div>
               <img
-                src={slide.src}
+                src={replaceUrl(slide.src)}
                 alt={`Slide ${index + 1}`}
                 className="h-[550px] w-auto object-contain mx-auto mb-6"
               />
